@@ -1,0 +1,42 @@
+da {
+    position: center;
+}
+
+
+form{
+
+    position: center;
+    margin: auto;
+    width: 900px;
+    height: 85%;
+    background-color: #eee;
+    font-weight: bold;
+    color: #7D9D9C;
+    padding: 20px;
+    border: solid #aaa;
+}
+button{
+    color: #7D9D9C;
+    font-weight: bold;
+    box-shadow: 10px 10px green;
+    border: none;
+}
+
+form > input, form>button, form>label, form>textarea{
+    width: 96%;
+    height: 30px;
+    box-sizing:border-box;
+}
+form>textarea{
+    height: 80px;
+}
+
+button:hover{
+    background-color: #F0EBE3;
+    color: black;
+    box-shadow: 10px 10px greenyellow;
+}
+
+button:active{
+    box-shadow: 10px 10px mediumspringgreen;
+}

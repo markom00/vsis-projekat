@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Креирање локације</title>
+    <link rel="stylesheet" href="stilovi/lokacije.css">
+
+    <meta name="apitoken" content="GrGPqaYnq6wCyOSRG4LwwN3M8bnkct4dAG10FhJza0VvL0ytk9nycPfhqCzWLJGjcENzxH63Wp47BEXJJ56ZwZuxNF">
+</head>
+<body>
+
+<form id="forma" method="post" action="https://vsis.mef.edu.rs/projekat/ulaznice/public_html/api/lokacija">
+
+    <label for="naziv">Назив локације:</label><br>
+    <input type="text" id="naziv" name="nazivlokacije" placeholder="Овде унесите назив локације:" required ><br>
+
+
+    <label for="adresa">Адреса:</label><br>
+    <input type="tel" id="adresa" name="adresalokacije" placeholder="Овде унесите адресу:" required> <br>
+
+
+    <label for="grad">Град:</label><br>
+    <input type="text" id="grad" name="gradlokacije" placeholder="Овде унесите град:" required><br>
+
+
+    <label for="opis">Опис:</label><br>
+    <textarea id="opis" name="opislokacije" placeholder="Овде унесите опс:"></textarea>
+
+
+    <div id="radno_vreme">
+        <input type="text" id="pon" name="danunedelji" value="1" hidden>
+        <input type="text" name="dan" placeholder="Понедељак:" disabled>
+        <input id="vreme_od_sati_1" type="number" name="vreme_od_sati" placeholder="Време од (сати)">
+        <input id="vreme_od_min_1" type="number" name="vreme_od_min" placeholder="Време до(минути):">
+        <input id="vreme_do_sati_1" type="number" name="vreme_do_sati" placeholder="Време од (сати):" disabled>
+        <input id="vreme_do_min_1" type="number" name="vreme_do_min" placeholder="Време до (минути):" disabled>
+        <br><br>
+
+        <input type="text" id="uto" name="danunedelji" value="2" hidden>
+        <input type="text" name="dan" placeholder="Уторак:" disabled>
+        <input type="number" id="vreme_od_sati_2" name="vreme_od_sati" placeholder="Време од (сати):">
+        <input type="number" id="vreme_od_min_2" name="vreme_od_min" placeholder="Време до(минути):">
+        <input type="number" id="vreme_do_sati_2" name="vreme_do_sati" placeholder="Време од (сати):" disabled>
+        <input type="number" id="vreme_do_min_2" name="vreme_do_min" placeholder="Време до (минути):" disabled>
+        <br><br>
+
+        <input type="text" id="sre" name="danunedelji" value="3" hidden>
+        <input type="text" name="dan" placeholder="Среда:" disabled>
+        <input type="number" id="vreme_od_sati_3" name="vreme_od_sati" placeholder="Време од (сати):">
+        <input type="number" id="vreme_od_min_3" name="vreme_od_min" placeholder="Време до(минути):">
+        <input type="number" id="vreme_do_sati_3" name="vreme_do_sati" placeholder="Време од (сати):" disabled>
+        <input type="number" id="vreme_do_min_3" name="vreme_do_min" placeholder="Време до (минути):" disabled>
+        <br><br>
+
+        <input type="text" id="cet" name="danunedelji" value="4" hidden>
+        <input type="text" name="dan" placeholder="Четвртак:" disabled>
+        <input type="number" id="vreme_od_sati_4" name="vreme_od_sati" placeholder="Време од (сати):">
+        <input type="number" id="vreme_od_min_4" name="vreme_od_min" placeholder="Време до(минути):">
+        <input type="number" id="vreme_do_sati_4" name="vreme_do_sati" placeholder="Време од (сати):" disabled>
+        <input type="number" id="vreme_do_min_4" name="vreme_do_min" placeholder="Време до (минути):" disabled>
+        <br><br>
+
+        <input type="text" id="pet" name="danunedelji" value="5" hidden>
+        <input type="text" name="dan" placeholder="Петак:" disabled>
+        <input type="number" id="vreme_od_sati_5" name="vreme_od_sati" placeholder="Време од (сати):">
+        <input type="number" id="vreme_od_min_5" name="vreme_od_min" placeholder="Време до(минути):">
+        <input type="number" id="vreme_do_sati_5" name="vreme_do_sati" placeholder="Време од (сати):" disabled>
+        <input type="number" id="vreme_do_min_5" name="vreme_do_min" placeholder="Време до (минути):" disabled>
+        <br><br>
+
+        <input type="text" id="sub" name="danunedelji" value="6" hidden>
+        <input type="text" name="dan" placeholder="Субота:" disabled>
+        <input type="number" id="vreme_od_sati_6" name="vreme_od_sati" placeholder="Време од (сати):">
+        <input type="number" id="vreme_od_min_6" name="vreme_od_min" placeholder="Време до(минути):">
+        <input type="number" id="vreme_do_sati_6" name="vreme_do_sati" placeholder="Време од (сати):" disabled>
+        <input type="number" id="vreme_do_min_6" name="vreme_do_min" placeholder="Време до (минути):" disabled>
+        <br><br>
+
+        <input type="text" id="ned" name="danunedelji" value="7" hidden>
+        <input type="text" name="dan" placeholder="Недеља:" disabled>
+        <input type="number" id="vreme_od_sati_7" name="vreme_od_sati" placeholder="Време од (сати):">
+        <input type="number" id="vreme_od_min_7" name="vreme_od_min" placeholder="Време до(минути):">
+        <input type="number" id="vreme_do_sati_7" name="vreme_do_sati" placeholder="Време од (сати):" disabled>
+        <input type="number" id="vreme_do_min_7" name="vreme_do_min" placeholder="Време до (минути):" disabled>
+        <br><br>
+    </div>
+
+    <button type="submit">Сними локацију</button>
+
+</form>
+</body>
+</html>

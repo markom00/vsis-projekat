@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Креирање налога у систему</title>
+    <link rel="stylesheet" href="stilovi/kreiranje.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="skripte/kreiranje.js"></script>
+    <meta name="apitoken" content="GrGPqaYnq6wCyOSRG4LwwN3M8bnkct4dAG10FhJza0VvL0ytk9nycPfhqCzWLJGjcENzxH63Wp47BEXJJ56ZwZuxNF">
+
+<h1>Креирање корисника у систему</h1>
+
+            <form id="forma" method="POST" action="https://vsis.mef.edu.rs/projekat/ulaznice/public_html/api/korisnik">
+
+                <label for="imeprezime">Име и презиме:</label>
+                <input type="text" id="imeprezime" placeholder="Овде унети име и презиме" required minlength="5" maxlength="180">
+                <div id="provera_imeprezime" class="div_hidden" hidden></div>
+
+
+                <label for="telefon">Број телефона:</label>
+                <input type="tel" id="telefon" placeholder="Овде унети број телефона" required minlength="9" maxlength="14">
+                <div id="provera_telefon" class="div_hidden" hidden></div>
+
+
+                <label for="email">Електронска пошта:</label>
+                <input type="email" id="email" placeholder="Овде унесите е-пошту">
+                <div id="provera_email" class="div_hidden" hidden></div>
+
+                <label for="lozinka">Лозинка:</label>
+                <input type="password" id="lozinka" placeholder="Овде унесите лозинку" required>
+                <div id="provera_lozinka" class="div_hidden" hidden></div>
+
+                <label for="ponovljenalozinka">Поновљена лозинка:</label>
+                <input type="password" id="ponovljenalozinka" placeholder="Поновите лозинку" required>
+                <div id="provera_ponovljenalozinka" class="div_hidden" hidden></div>
+
+                <label for="uloge">Изаберите улогу:</label>
+                <select name="uloge" id="uloge">
+                    <option value="administrator" id="administrator">Администратор</option>
+                    <option value="blagajnik" id="blagajnik">Благајник</option>
+                    <option value="registrovaniKorisnik" id="registrovaniKorisnik">Регистровани корисник</option>
+                </select>
+
+                <br> <br>
+                <select name="lokacije" id="lokacije" >
+                    <option value="lokacija1">Ваљево</option>
+                    <option value="lokacija2">Београд</option>
+                    <option value="lokacija3">Нови Сад</option>
+                    <option value="lokacija4">Крагујевац</option>
+                </select>
+
+
+                <button type="submit" class="button">Региструјте се</button>
+                <div id="provera_registracija" class="div_hidden" hidden></div>
+
+            </form>
+
+</head>
+<body>
+
+</body>
+</html>
