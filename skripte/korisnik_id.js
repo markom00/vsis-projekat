@@ -124,7 +124,7 @@ $(function() {
                     $('#id').val(localStorage.getItem('userid'))
                     $('#imeprezime').val(localStorage.getItem('userName'))
                     $('#broj').val(localStorage.getItem('userphone'))
-                    $('#imejl').val(localStorage.getItem('useremail'))
+                    $('#email').val(localStorage.getItem('useremail'))
                     $('#uloge').val(localStorage.getItem('userroleid'))
                     console.log(response)
                 },
@@ -147,7 +147,7 @@ $(function() {
                     },
                     "data": {
                         "name": $('#imeprezime').val(),
-                        "email": $('#imejl').val(),
+                        "email": $('#email').val(),
                         "phone": $('#broj').val(),
                         "password": $('#lozinka').val(),
                         "userRoleId": $('#uloge').val(),
