@@ -32,13 +32,13 @@ $(function(){
                     localStorage.setItem('apitoken', response.apitoken);
                     localStorage.setItem('type', response.type);
                     if(localStorage.getItem("type") === 'администратор'){
-                        window.location = 'korisnik.html'; // zbod registrovanog korisnika
+                        window.location = 'administrator.html'; // zbod registrovanog korisnika
                     }
                     else if(localStorage.getItem("type") === 'благајник'){
                         window.location = 'blagajnik.html';
                     }
                     else if(localStorage.getItem("type") === 'регистровани корисник'){
-                        window.location = 'administrator.html'; // Stavio sam da redirektujrm obicnog korsnika naadministratora da bi se video taj deo
+                        window.location = 'korisnik.html'; 
                     }
                 }
             },
